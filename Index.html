@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <title>Proyecto</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="ordenar2.js"></script>
+    <script src="ordenar.js"></script>
+</head>
+
+<body>
+    <h1>Proyecto de Estadistica</h1>
+    <div class="container">
+        <h3>Ordenar números</h3>
+        <label for="basic-url">Iniciar programa</label>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick="ordenar()"> Iniciar</button>
+        <br>
+        <hr> Lista de números ingresados:
+        <div id="numerosIngresados">
+
+        </div>
+        <hr>
+        <h3>Tallos y Hojas</h3>
+
+        <div id="tallos1">
+        </div>
+
+        <hr>
+        <div class="container">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Media</th>
+                        <th scope="col">Moda</th>
+                        <th scope="col">Mediana</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td id="promedioId"></td>
+                        <td id="modaId"></td>
+                        <td id="medianaId"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <h3>Frecuencia</h3>
+        <div class="row">
+            <div class="col-sm" id="frecuenciaId">
+
+            </div>
+            <div class="col-sm" id="frecuenciaNoPorcentualId">
+            
+            </div>
+            <div class="col-sm" id="frecuenciaAcumulativaId">
+                
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class=" container">
+        <h3>Diagramas</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="chart_div"></div>
+            </div>
+            <div class="col-sm-6">
+                <div id="chart_div1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
