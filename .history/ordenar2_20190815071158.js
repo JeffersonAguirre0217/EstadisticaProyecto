@@ -108,7 +108,7 @@ function ordenar() {
     })
     for (var i = 0; i < frecienciaRepetidaElinaNumeroRepetidos.length; i++) {
         var test = document.createElement("LI");
-        var test2 = document.createTextNode(frecienciaRepetidaElinaNumeroRepetidos[i]);
+        var test2 = document.createTextNode(efrecienciaRepetidaElinaNumeroRepetidos[i]);
         test.appendChild(test2);
         document.getElementById("frecuenciaRepetitivaId").appendChild(test);
     }

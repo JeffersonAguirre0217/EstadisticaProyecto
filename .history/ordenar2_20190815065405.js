@@ -99,18 +99,8 @@ function ordenar() {
             document.getElementById("hojasId").appendChild(test);
             //frecuenciaTemporal.push(contarNumerosRepetidos);
         }
-        frecuenciaRepetida.push(contarNumerosRepetidos);
-        
-    }
-    console.log( "frecuencia"+ frecuenciaRepetida);
-    var frecienciaRepetidaElinaNumeroRepetidos = frecuenciaRepetida.filter(function (item, index, array) {
-        return array.indexOf(item) === index;
-    })
-    for (var i = 0; i < frecienciaRepetidaElinaNumeroRepetidos.length; i++) {
-        var test = document.createElement("LI");
-        var test2 = document.createTextNode(frecienciaRepetidaElinaNumeroRepetidos[i]);
-        test.appendChild(test2);
-        document.getElementById("frecuenciaRepetitivaId").appendChild(test);
+        frecuenciaTemporal.push(contarNumerosRepetidos);
+        console.log( "frecuencia"+ frecuenciaTemporal);
     }
     
     //frecuencia
@@ -187,7 +177,7 @@ function ordenar() {
             console.log("  ->" , ordenarMayorMenorTallo  );
     console.log( " Histograma");
     for(i = 0; i<ordenarMayorMenorTallo.length; i++){
-        console.log(ordenarMayorMenorTallo[i] + " -" + "▄▄");
+        console.log(ordenarMayorMenorTallo[i] + " -" + "▄");
         console.log("  |");
     }
     console.log("  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --");

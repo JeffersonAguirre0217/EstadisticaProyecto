@@ -103,15 +103,6 @@ function ordenar() {
         
     }
     console.log( "frecuencia"+ frecuenciaRepetida);
-    var frecienciaRepetidaElinaNumeroRepetidos = frecuenciaRepetida.filter(function (item, index, array) {
-        return array.indexOf(item) === index;
-    })
-    for (var i = 0; i < frecienciaRepetidaElinaNumeroRepetidos.length; i++) {
-        var test = document.createElement("LI");
-        var test2 = document.createTextNode(frecienciaRepetidaElinaNumeroRepetidos[i]);
-        test.appendChild(test2);
-        document.getElementById("frecuenciaRepetitivaId").appendChild(test);
-    }
     
     //frecuencia
 

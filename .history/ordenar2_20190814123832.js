@@ -72,12 +72,12 @@ function ordenar() {
     }
 
     //elimina las hojas repetidas y ordena en la vista
-    var eliminaTalloRepetido = tallo.filter(function (item, index, array) {
+    var eliminarHojasRepetidas = tallo.filter(function (item, index, array) {
         return array.indexOf(item) === index;
     })
-    for (var i = 0; i < eliminaTalloRepetido.length; i++) {
+    for (var i = 0; i < eliminarHojasRepetidas.length; i++) {
         var test = document.createElement("LI");
-        var test2 = document.createTextNode(eliminaTalloRepetido[i]);
+        var test2 = document.createTextNode(eliminarHojasRepetidas[i]);
         test.appendChild(test2);
         document.getElementById("tallosId").appendChild(test);
     }
@@ -99,18 +99,8 @@ function ordenar() {
             document.getElementById("hojasId").appendChild(test);
             //frecuenciaTemporal.push(contarNumerosRepetidos);
         }
-        frecuenciaRepetida.push(contarNumerosRepetidos);
-        
-    }
-    console.log( "frecuencia"+ frecuenciaRepetida);
-    var frecienciaRepetidaElinaNumeroRepetidos = frecuenciaRepetida.filter(function (item, index, array) {
-        return array.indexOf(item) === index;
-    })
-    for (var i = 0; i < frecienciaRepetidaElinaNumeroRepetidos.length; i++) {
-        var test = document.createElement("LI");
-        var test2 = document.createTextNode(frecienciaRepetidaElinaNumeroRepetidos[i]);
-        test.appendChild(test2);
-        document.getElementById("frecuenciaRepetitivaId").appendChild(test);
+        frecuenciaTemporal.push(contarNumerosRepetidos);
+        console.log( "frecuencia"+ frecuenciaTemporal);
     }
     
     //frecuencia
@@ -182,17 +172,9 @@ function ordenar() {
         medianaImprimir.appendChild(medianaImprimir2);
         document.getElementById("q3Id").appendChild(medianaImprimir);
         
-    var ordenarMayorMenorTallo = eliminaTalloRepetido.sort(function (a, b){
-            return a - b;});
-            console.log("  ->" , ordenarMayorMenorTallo  );
+
     console.log( " Histograma");
-    for(i = 0; i<ordenarMayorMenorTallo.length; i++){
-        console.log(ordenarMayorMenorTallo[i] + " -" + "▄▄");
-        console.log("  |");
-    }
-    console.log("  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --");
-    console.log("  0  1    2    3    4    5    6    7    8    9    10");
-    console.log(" ");
+
     console.log( " Diagrama de Bigotes");
     console.log( "       ||      ");
     console.log( "       ||      ");
